@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description"><i>Thank you for taking the time to help us improve the platform.</i></p>
+
+        <form action="#" id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <br>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <br>
+
+            <label id="email-label" for="email">Email</label>
+            <br>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <br>
+
+            <label id="number-label" for="number">Age (optional)</label>
+            <br>
+            <input id="number" type="number" placeholder="Age" min="0" max="123">
+
+            <br>
+
+            <label id="dropdown-label" for="dropdown">Education Level</label>
+            <br>
+            <select id="dropdown" name="education">
+                <option value="high-school">High School</option>
+                <option value="some-college">Some College</option>
+                <option value="college-degree">College Degree</option>
+            </select>
+
+            <br>
+
+            <label>Gender</label>
+            <br>
+            <label for="male">
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <br>
+            <label for="female">
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+
+            <br>
+            <br>
+
+            <label for="skills">Development Skills</label>
+            <br>
+            <label for="front-end">
+                <input id="front-end" type="checkbox" name="skills" value="front-end"> Front-End
+            </label>
+            <br>
+            <label for="back-end">
+                <input id="back-end" type="checkbox" name="skills" value="back-end"> Back-End
+            </label>
+
+            <br>
+            <br>
+
+            <label for="comments">Any comments or suggestions?</label>
+            <br>
+            <textarea id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+
+            <br>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
